@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GIF Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .banner {
+      padding: 60px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .banner p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .gif-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gif-card {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 12px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.35);
+      transition: transform 0.2s;
+    }
+
+    .gif-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .gif-card img {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .download-wrap {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .download-btn {
+      padding: 16px 32px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      background: #ffffff;
+      color: #000;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <h1>Seaside Studios Section</h1>
+    <p>These GIFs are made for chats, streams, and pure chaos</p>
+  </div>
+
+  <div class="container">
+    <div class="gif-grid">
+      <div class="gif-card">
+        <img src="./gifs/gif1.gif" alt="GIF 1">
+      </div>
+      <div class="gif-card">
+        <img src="./gifs/gif2.gif" alt="GIF 2">
+      </div>
+      <div class="gif-card">
+        <img src="./gifs/gif3.gif" alt="GIF 3">
+      </div>
+      <div class="gif-card">
+        <img src="./gifs/gif4.gif" alt="GIF 4">
+      </div>
+      <div class="gif-card">
+        <img src="./gifs/gif5.gif" alt="GIF 5">
+      </div>
+      <div class="gif-card">
+        <img src="./gifs/gif6.gif" alt="GIF 6">
+      </div>
+    </div>
+
+    <div class="download-wrap">
+      <button class="download-btn">Download GIF</button>
+    </div>
+  </div>
+
+</body>
+</html>
